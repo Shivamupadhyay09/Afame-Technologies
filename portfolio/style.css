@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+/* Navigation Bar */
+/* Navigation Bar */
+nav {
+    background-color: #000; 
+    padding: 15px 10px; /* Extra padding to prevent cut-off */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end; /* Right-align menu */
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 50px; 
+}
+
+nav ul li {
+    display: inline;
+}
+
+/* Navigation Links */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px 15px; /* Added padding for better visibility */
+    background: none;
+    border: none;
+    display: inline-block;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    color: #0073e6; /* Light Blue Hover Effect */
+}
+
+/* Fix for Last Button (Contact) */
+nav ul li:last-child {
+    margin-right: 10px; /* Ensures enough space on the right */
+}
+
+/* Sections with Unique Backgrounds */
+section {
+    padding: 100px 20px;
+}
+
+/* Home Section */
+#home {
+    background: linear-gradient(135deg, #aec0e0, #2a5298); /* Dark Blue Gradient */
+}
+
+/* About Section */
+#about {
+    background: linear-gradient(135deg, #ff9a8b, #211a1c); /* Coral-Pink Gradient */
+}
+
+/* Skills Section */
+#skills {
+    background: linear-gradient(135deg, #507a72, #202c2a); /* Teal Green Gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-container ul li {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+/* Projects Section */
+#projects {
+    background: linear-gradient(135deg, #25383c, #6d95ad); /* Soft Red Gradient */
+}
+
+.project {
+    background: rgba(0, 0, 0, 0.623);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+#contact {
+    background: linear-gradient(135deg, #678985, #83a191); /* Purple Gradient */
+}
+
+/* Profile Section */
+.welcome-text {
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+.profile-container {
+    margin-top: 40px;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animated Text */
+.animated-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeInOut 3s infinite;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(10px); }
+    50% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+}
+
+/* Footer */
+footer {
+    background-color: #060606;
+    color: white;
+    padding: 10px;
+}
